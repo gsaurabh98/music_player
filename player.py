@@ -48,19 +48,19 @@ def stop():
     pygame.mixer.music.stop()
 
 
-Button1 = tkr.Button(music_player, width=2, height=2, font="Ubuntu 12 bold", text="PLAY", command=play, bg="green", fg="white")
-Button2 = tkr.Button(music_player, width=5, height=3, font="Ubuntu 12 bold", text="PAUSE", command=pause, bg="blue", fg="white")
-Button3 = tkr.Button(music_player, width=5, height=3, font="Ubuntu 12 bold", text="RESUME", command=resume, bg="orange", fg="white")
-Button4 = tkr.Button(music_player, width=5, height=3, font="Ubuntu 12 bold", text="STOP", command=stop, bg="red", fg="white")
+button1 = tkr.button(music_player, width=2, height=2, font="Ubuntu 12 bold", text="PLAY", command=play, bg="green", fg="white")
+button2 = tkr.button(music_player, width=5, height=3, font="Ubuntu 12 bold", text="PAUSE", command=pause, bg="blue", fg="white")
+button3 = tkr.button(music_player, width=5, height=3, font="Ubuntu 12 bold", text="RESUME", command=resume, bg="orange", fg="white")
+button4 = tkr.button(music_player, width=5, height=3, font="Ubuntu 12 bold", text="STOP", command=stop, bg="red", fg="white")
 
 
 var = tkr.StringVar() 
 song_title = tkr.Label(music_player, font="Ubuntu 12 bold", textvariable=var)
 
 song_title.pack()
-Button1.pack(fill="x")
-Button2.pack(fill="x")
-Button3.pack(fill="x")
-Button4.pack(fill="x")
+button1.pack(fill="x")
+button2.pack(fill="x")
+button3.pack(fill="x")
+button4.pack(fill="x")
 play_list.pack(fill="both", expand="yes")
 music_player.mainloop()
